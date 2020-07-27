@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/dynamics.js" defer></script>
+    <script src="./js/sidebar.js"> defer</script>
+    <!--    
+        source : https://www.youtube.com/watch?v=FCnag9m3NYY
+        outils web : http://dynamicsjs.com/
+    -->
+    <title>Wavy sidebar menu</title>
+</head>
+<body>
+
+    <!-- menu -->
+    <nav class="navbar navbar-dark bg-dark shadow-sm fixed-top">
+        <a class="navbar-brand" href="#">Fluide navbar</a>
+      <button id="menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        </button>
+    </nav>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div style="height:100px;"></div>
+        <a href="#"><span class="icon icon-user"></span>User</a>
+        <a href="#"><span class="icon icon-inbox"></span>Inbox</a>
+        <a href="#"><span class="icon icon-group"></span>Group</a>
+        <a href="#"><span class="icon icon-list"></span>List</a>
+        <a href="#"><span class="icon icon-times"></span>Times</a>
+        <svg id="sidebar-wave" class="sidebar-wave" width="100%" height="100%" viewBox="0 0 200 900" version="1.1" preserveAspectRatio="none">
+            <path d="M200,0c0,0 -200,-5.003 -200,207c0,212.003 99.164,442.058 136,519c36.836,76.942 64,174 64,174l38,0l0,-900l-38,0Z"
+            data-to="M0,0c0,0 0,-5.003 0,207c0,212.003 -0.836,409.058 0,519c0.648,85.303 0,174 0,174l200,0l0,-900l-200,0Z"/>
+        </svg>
+    </div>
+
+    <!-- contenu -->
+    <main role="main" class="container">
+        <div class="starter-template">
+            <h1>Bootstrap starter template</h1>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        </div>
+    </main>
+</body>
+</html>

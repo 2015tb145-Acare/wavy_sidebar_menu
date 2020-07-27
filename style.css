@@ -1,0 +1,67 @@
+body {
+    padding-top: 5rem;
+    overflow-x: hidden;
+}
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: -200px;
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+    transform: translateX(0);
+    transition: transform .3s;
+}
+.sidebar a {
+    display: block;
+    height: 66px;
+    border-top: 1px solid rgba(255, 255, 255, .05);
+    border-bottom: 1px solid #2b333c;
+    text-align: center;
+    line-height: 66px;
+    color: rgba(255, 255, 255, .4);
+    transform: translateX(200px);
+    transition: color .3s;
+}
+.sidebar a:focus,
+.sidebar a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, .05);
+    color: #fff;
+}
+.container {
+    height: 100vh;
+}
+.sidebar-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    fill: #323a44;
+    z-index: -1;
+}
+.has-sidebar .sidebar {
+    transform: translateX(-200px);
+}
+/* apparition progressive des liens 
+.has-sidebar .sidebar a {
+    transform: translateX(0);
+}
+.has-sidebar .sidebar a:nth-child(2) {
+    transition-delay: .05s;
+}
+.has-sidebar .sidebar a:nth-child(3) {
+    transition-delay: .15s;
+}
+.has-sidebar .sidebar a:nth-child(4) {
+    transition-delay: .25s;
+}
+.has-sidebar .sidebar a:nth-child(5) {
+    transition-delay: .35s;
+}
+.has-sidebar .sidebar a:nth-child(6) {
+    transition-delay: .45s;
+} */
